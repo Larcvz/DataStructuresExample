@@ -35,7 +35,7 @@ Position find(int x) {
 
 void insert(int pos) {
 	Position p = find(pos);
-	int m, i;
+	int m;
 	scanf_s("%d", &m);
 	struct Node temp;
 	creatList(m, &temp);
