@@ -91,6 +91,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "稀疏矩阵", "稀疏矩�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "稀疏矩阵转置", "稀疏矩阵转置\稀疏矩阵转置.vcxproj", "{35291698-0032-497A-A118-2F29074F6914}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "稀疏矩阵相乘", "稀疏矩阵相乘\稀疏矩阵相乘.vcxproj", "{648CB8CF-9BD7-46A6-B730-9A4A370070FC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -451,6 +453,14 @@ Global
 		{35291698-0032-497A-A118-2F29074F6914}.Release|x64.Build.0 = Release|x64
 		{35291698-0032-497A-A118-2F29074F6914}.Release|x86.ActiveCfg = Release|Win32
 		{35291698-0032-497A-A118-2F29074F6914}.Release|x86.Build.0 = Release|Win32
+		{648CB8CF-9BD7-46A6-B730-9A4A370070FC}.Debug|x64.ActiveCfg = Debug|x64
+		{648CB8CF-9BD7-46A6-B730-9A4A370070FC}.Debug|x64.Build.0 = Debug|x64
+		{648CB8CF-9BD7-46A6-B730-9A4A370070FC}.Debug|x86.ActiveCfg = Debug|Win32
+		{648CB8CF-9BD7-46A6-B730-9A4A370070FC}.Debug|x86.Build.0 = Debug|Win32
+		{648CB8CF-9BD7-46A6-B730-9A4A370070FC}.Release|x64.ActiveCfg = Release|x64
+		{648CB8CF-9BD7-46A6-B730-9A4A370070FC}.Release|x64.Build.0 = Release|x64
+		{648CB8CF-9BD7-46A6-B730-9A4A370070FC}.Release|x86.ActiveCfg = Release|Win32
+		{648CB8CF-9BD7-46A6-B730-9A4A370070FC}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
