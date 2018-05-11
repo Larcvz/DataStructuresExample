@@ -87,8 +87,8 @@ void PrintMatrix(RLSMatrix *M)
 {
 	int i, j, k = 0;
 
-	printf("%d %d\n", M->maxRow, M->maxCol);
-	for ( i = 0; i < M->valueCount; i++)
+	printf("行数：%d 列数：%d\n", M->maxRow, M->maxCol);
+	for ( i = 0; i < M->maxRow; i++)
 	{
 		int tag = 0;
 		for ( j = 0; j < M->maxCol; j++)

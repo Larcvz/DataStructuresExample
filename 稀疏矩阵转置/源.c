@@ -22,13 +22,13 @@ int FastTransposeSMatrix(TSMatrix *M, TSMatrix *T)
 	num = (int*)malloc(sizeof(int)*M->mu);
 	cpot = (int*)malloc(sizeof(int)*M->mu);
 	
-	for (i = 0; i < M->mu; i++)
+	for (i = 0; i < M->mu; i++)//初始化数组
 		num[i] = 0;
-	for ( i = 0; i < M->tu; i++)
+	for ( i = 0; i < M->tu; i++)//统计每一列中非0元的个数
 		++num[M->Data[i].j];
 	cpot[0] = 0;
-	for ( i = 1; i < M->tu; i++)
-		cpot[i] = cpot[i - 1] + num[i - 1];
+	for ( i = 1; i < M->mu; i++)
+		cpot[i] = cpot[i - 1] + num[i - 1];//求出第i列中第一个非0元在转置后的表中的序号
 	for ( i = 0; i < M->tu; i++)
 	{
 		col = M->Data[i].j;
@@ -104,7 +104,8 @@ void Run()
 	FastTransposeSMatrix(&M, &T);
 	//PrintMatrix(&M);
 	PrintMatrix(&T);
-
+	free(T.Data);
+	free(M.Data);
 }
 
 int main()
