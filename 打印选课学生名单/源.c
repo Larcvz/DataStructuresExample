@@ -26,6 +26,9 @@ List Creat(int K) {
 }
 
 void Insert()
+{
+
+}
 
 void CreatClassList(List Class, int N) {
 	int C, name[5];
